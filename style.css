@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+}
+:root {
+  --bg: #f0fff0;
+  --text: #222;
+  --primary: #3a9d23;
+  --card: #fff;
+}
+body.dark {
+  --bg: #121212;
+  --text: #f5f5f5;
+  --primary: #69d84f;
+  --card: #1e1e1e;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: var(--card);
+  box-shadow: 0 0 10px #0002;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.logo img {
+  height: 40px;
+  margin-right: 10px;
+}
+.logo .ifro {
+  color: var(--primary);
+}
+textarea, input[type="text"], input[type="file"] {
+  width: 100%;
+  padding: 0.8rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: var(--card);
+  color: var(--text);
+}
+button {
+  width: 100%;
+  padding: 0.8rem;
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+button:hover {
+  background-color: #2d7b1a;
+}
+section {
+  margin: 1rem 0;
+}
+.post, .message {
+  background-color: var(--card);
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 5px #0001;
+  margin-bottom: 1rem;
+}
+img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-top: 0.5rem;
+}

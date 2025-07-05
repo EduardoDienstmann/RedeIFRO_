@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RedeIFRO</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="logo.png" alt="RedeIFRO Logo" />
+      <span>Rede<span class="ifro">IFRO</span></span>
+    </div>
+    <button id="themeToggle">🌗</button>
+  </header>
+
+  <main id="app">
+    <div id="loginContainer">
+      <h1>Login</h1>
+      <input type="text" id="usernameInput" placeholder="Seu nome de usuário">
+      <button onclick="login()">Entrar</button>
+    </div>
+
+    <div id="mainApp" style="display:none;">
+      <section class="profile">
+        <h2>Olá, <span id="profileName"></span>!</h2>
+        <button onclick="logout()">Sair</button>
+      </section>
+
+      <section class="post-box">
+        <textarea id="postText" placeholder="No que está pensando?"></textarea>
+        <input type="file" id="imageUpload" accept="image/*">
+        <button onclick="createPost()">Postar</button>
+      </section>
+
+      <section class="messaging">
+        <h3>Mensagens Privadas</h3>
+        <input type="text" id="msgDestinatario" placeholder="Para quem?">
+        <textarea id="msgTexto" placeholder="Sua mensagem..."></textarea>
+        <button onclick="sendMessage()">Enviar</button>
+        <div id="messageContainer"></div>
+      </section>
+
+      <section class="feed">
+        <h3>Feed</h3>
+        <div id="postsContainer"></div>
+      </section>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
